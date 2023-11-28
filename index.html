@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <script>
+        function checkValues(){
+            console.log("Okay");
+            //const inputs = document.getElementsByName('age');
+            console.log(document.getElementsByName('age')[0].value);
+            //console.log(inputs[0].value);
+            if (document.getElementById("age").value < 18) {
+                console.log("Menor");
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Envio Form'), checkValues()" autocomplete="off" target="_blank" method="post" action="#">
+        Este é o Formulário:<br>
+        Nome: <input type="text" name="name"><br>
+        Idade: <input type="number" id="age" name="age"><br>
+        Senha: <input type="password" name="password"><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
