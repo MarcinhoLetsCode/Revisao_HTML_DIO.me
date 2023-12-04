@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form onsubmit="" method="get">
+        <label for="name"> Nome: </label><input type="text" id="name"  name="name"><br>
+        <label for="role"> Cargo: </label>
+        <select name="role" id="role">
+            <option value="no" selected disabled>Selecione Cargo</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="ti">T.I.</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select><br><br>
+        <label for="list"> Lista: </label>
+        <select name="list" id="list" multiple>
+            <option value="0" disabled>Selecione Itens</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+        <label for="password"> Assunto: </label><input type="password" id="password" name="password"><br>
+        <button type="submit">Enviar</button>
+    </form>    
 </body>
 </html>
