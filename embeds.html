@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        .row{
+            margin:5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 0px 0px 0px 0px;
+            border-radius: 0px;
+            border-color: lightgray green red purple;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Formulário de Cadastro</h1>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="row">
+                <label for="name">Nome: </label><input type="text" id="name">
+                <label for="email">E-mail: </label><input type="email" id="email">
+            </div>
+            <div class="row">
+                <label for="job">Profissão: </label><input type="text" id="job">
+                <label for="place">Empresa: </label><input type="text" id="place">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+                <div class="row">
+                    <label for="address">Endereço: </label><input type="text" id="address">
+                    <label for="number">Número: </label><input type="number" id="number" min="1" max="99999">
+                </div>
+
+                <div class="row">
+                    <label for="district">Bairro: </label><input type="text" id="district">
+                </div>
+
+                <div class="row">
+                    <label for="city">Cidade/UF: </label><input type="text" id="city">
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações De Contato</legend>
+            <div class="row">
+                <label for="cell">Celular: </label><input type="text" id="cell">
+                <label for="wa">WhatsApp: </label><input type="number" id="wa">
+            </div>
+
+            <div class="row">
+                <label for="linkedin">Linkedin: </label><input type="email" id="linkedin">
+                <label for="gh">GitHub: </label><input type="email" id="gh">
+            </div>
+        </fieldset>
+
+        <div class="row"></div>
+            <button type="reset" value="limpar">Limpar</button>
+            <button type="submit" value="enviar">Enviar Formulário</button>
+        </div>
+        
+    </form>
+    
+</body>
+</html>
